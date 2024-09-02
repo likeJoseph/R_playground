@@ -28,4 +28,14 @@ summary(a5_1$지각횟수)
 
 a5_1 %>% group_by(부서) %>% summarise(n(), mean(토익점수))
 
+# 그룹(부서)별 토익점수 요약하기
 
+a5_4 %>%
+  
+  group_by(부서) %>%
+  
+  summarise(평균 = mean(토익점수),
+            
+            표준편차 = sd(토익점수),
+            
+            중위수 = median(토익점수))
