@@ -19,4 +19,4 @@ exam_na <- na.omit(data)
 # 데이터: exam_na(결측치가 제거된 데이터)
 
 a5_1 <- mutate(exam_na, 근태점수 = 100 - (결근횟수 + (지각횟수/3))*5)
-a5_1
+a5_1[1,]
